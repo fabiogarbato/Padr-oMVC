@@ -3,10 +3,9 @@
 class Home {
     public function index() {
         $userModel = new User();
-        $user = $userModel->findUserById(1); 
-
+        $users = $userModel->getAllUsers(); 
         $data = [
-            'user' => $user
+            'users' => $users
         ];
 
         $this->view('home/index', $data);
