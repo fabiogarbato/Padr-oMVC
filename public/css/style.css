@@ -1,0 +1,46 @@
+/* Arquivo: public/css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #333;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 10px;
+}
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #F7A70A;
+    color: white;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #cf8e0d;
+}
