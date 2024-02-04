@@ -22,12 +22,13 @@
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
 
-                    <input type="submit" value="Save Changes">
+                    <button type="button" id="clearBtn" class="button">Limpar</button>
                 </form>
             <?php else: ?>
                 <p>No users found.</p>
             <?php endif; ?>
         </div>
+
         <script>
             const users = <?php echo json_encode($users); ?>;
             const emailField = document.getElementById('email');
@@ -42,6 +43,12 @@
                     emailField.value = ''; 
                 }
             }
+
+            document.getElementById('clearBtn').addEventListener('click', function() {
+                userSelect.value = '';
+                emailField.value = '';
+            });
+
         </script>
     </body>
 </html>
